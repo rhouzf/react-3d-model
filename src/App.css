@@ -1,0 +1,274 @@
+/* Style global pour le conteneur principal */
+/* Pas de modifications nécessaires ici */
+
+/* Style pour la barre de navigation */
+.app-nav {
+  background-color: #333;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+}
+
+/* Style pour la liste de navigation */
+.app-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante sur des écrans plus petits */
+}
+
+/* Style pour les éléments de la liste */
+.app-nav li {
+  margin: 0 10px; /* Réduit l'espacement horizontal pour les petits écrans */
+}
+
+/* Style pour les liens de navigation */
+.app-nav a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+/* Style pour les liens lors du survol */
+.app-nav a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* Style pour les liens actifs (optionnel) */
+.app-nav a.active {
+  color: #ffcc00;
+}
+
+/* Style pour la section "About the Architect" */
+.about-architect {
+  background-color: #f1dede; /* Rose de fond */
+  padding: 0 20px; /* Padding horizontal pour éviter que le contenu touche les bords */
+  margin: 0; /* Supprime les marges pour occuper toute la largeur */
+  border: none; /* Supprime la bordure pour que le fond rose occupe toute la largeur */
+  box-shadow: none; /* Supprime l'ombre pour que le fond rose occupe toute la largeur */
+  width: 100%; /* Assure que la largeur prend toute la largeur de la fenêtre */
+  height: 100vh; /* Ajuste la hauteur pour qu'elle occupe toute la hauteur de l'écran */
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+  display: flex; /* Utilise flexbox pour aligner le contenu */
+  flex-direction: column; /* Aligne les éléments en colonne */
+}
+
+/* Style pour le titre de la section */
+.about-architect-title {
+  font-size: 2em; /* Taille du texte du titre */
+  font-weight: bold; /* Gras pour le titre */
+  color: #333; /* Couleur du texte */
+  margin: 20px 0; /* Marge en haut et en bas du titre */
+  align-self: flex-start; /* Aligne le titre en haut à gauche */
+}
+
+/* Style pour le conteneur de la photo et de la biographie */
+.about-architect-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Place la photo à gauche et le texte à droite */
+  flex-direction: row; /* Aligne en ligne sur les grands écrans */
+  width: 100%;
+  max-width: 1200px; /* Limite la largeur maximale pour un meilleur rendu */
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  padding: 20px 0; /* Ajoute un padding vertical pour espacer du titre */
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+/* Style pour la photo de l'architecte */
+.architect-photo {
+  width: 200px; /* Ajustement pour une meilleure réactivité */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px; /* Espacement à droite de la photo */
+  border: 6px solid #f1dede;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Style pour la biographie de l'architecte */
+.architect-bio {
+  width: 100%;
+  max-width: 700px; /* Limite la largeur pour un meilleur rendu */
+  line-height: 1.8;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 10px;
+}
+
+/* Media Queries pour les écrans plus petits */
+@media (max-width: 768px) {
+  .about-architect {
+    height: auto; /* Ajuste la hauteur en fonction du contenu sur les petits écrans */
+  }
+
+  .about-architect-content {
+    flex-direction: column; /* Aligne la photo et le texte en colonne sur les petits écrans */
+    align-items: center; /* Centre le contenu horizontalement */
+    text-align: center; /* Centre le texte */
+  }
+
+  .architect-photo {
+    margin-right: 0; /* Supprime l'espacement à droite de la photo */
+    margin-bottom: 20px; /* Ajoute un espacement en bas de la photo */
+    width: 150px; /* Réduit la largeur de la photo pour les petits écrans */
+    height: 150px; /* Réduit la hauteur de la photo pour les petits écrans */
+  }
+
+  .architect-bio {
+    max-width: 100%; /* Permet à la biographie d'occuper toute la largeur disponible */
+  }
+}
+
+
+/* Styles pour le portfolio */
+.portfolio {
+  margin-bottom: 70px;
+}
+
+.portfolio-item {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Colonne sur petits écrans */
+  gap: 10px; /* Espacement entre les éléments */
+}
+
+/* Style pour le titre du portfolio item */
+.portfolio-item h3 {
+  font-size: 1.5em; /* Ajustement pour les petits écrans */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Style global pour le conteneur principal */
+.f {
+  display: flex; /* Aligne les éléments en ligne */
+  flex-direction: column; /* Dispose les éléments en colonne sur les petits écrans */
+  gap: 20px; /* Espacement entre les éléments */
+}
+
+/* Style pour la description du modèle 3D */
+.model-info {
+  flex: 1; /* Permet à la description d'occuper l'espace restant */
+  width: 100%; /* Largeur 100% pour occuper toute la largeur disponible sur petits écrans */
+  max-width: 500px; /* Largeur maximale pour la description */
+  height: auto; /* Hauteur automatique pour s'adapter au contenu */
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Style pour le modèle 3D */
+.model-viewer {
+  width: 100%;
+  max-width: 500px; /* Largeur maximale pour le modèle 3D */
+  height: 300px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Style pour la vidéo du projet */
+.project-video {
+  width: 100%;
+  max-width: 500px; /* Largeur maximale pour la vidéo */
+  height: 300px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Media Queries pour les écrans plus grands */
+@media (min-width: 768px) {
+  .f {
+    flex-direction: row; /* Aligne les éléments en ligne sur les grands écrans */
+    justify-content: space-between; /* Répartit l'espace entre les éléments */
+  }
+
+  .model-info,
+  .model-viewer {
+    width: 48%; /* Largeur ajustée pour permettre un espacement entre les éléments */
+  }
+}
+
+/* Styles pour la section Contact */
+.contact {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contact p strong {
+  color: #333;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Permet aux icônes de passer à la ligne sur des écrans plus petits */
+}
+
+.social-media a {
+  margin: 0 10px; /* Réduit l'espacement horizontal pour les petits écrans */
+  color: #0073e6;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-media a:hover {
+  color: #005bb5;
+  transform: scale(1.1);
+}
+
+/* Styles pour le footer */
+.app-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 16px;
+}
