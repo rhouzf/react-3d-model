@@ -50,4 +50,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload('/react-3d-model/assets/docs/scene.gltf')
