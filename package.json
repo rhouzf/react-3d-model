@@ -7,7 +7,7 @@
   "homepage": "https://rhouzf.github.io/react-3d-model",
   "scripts": {
     "predeploy": "vite build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d docs",
     "build": "react-scripts build",
     "dev": "vite",
     "dist": "vite build",
