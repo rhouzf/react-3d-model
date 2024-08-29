@@ -9,7 +9,7 @@ export default defineConfig({
     outDir: 'docs/assets', // Change this to your desired output directory
     rollupOptions: {
       input: {
-        main: './src/main.jsx', // Ensure your main entry point is correctly configured
+        main: 'index.html', // Ensure your main entry point is correctly configured
       }
     }
   }
