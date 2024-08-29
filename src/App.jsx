@@ -6,8 +6,8 @@ import { Canvas , useFrame} from '@react-three/fiber'
 import { Environment, OrbitControls ,PerspectiveCamera} from "@react-three/drei"
 
 // Assume Scene and Z are components you have already defined to render your 3D models
-import Scene from '../docs/Scene'
-import D from '../docs/D'
+import Scene from '../public/Scene'
+import D from '../public/D'
 
 function App() {
     const [count, setCount] = useState(0);
