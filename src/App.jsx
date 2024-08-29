@@ -6,8 +6,8 @@ import { Canvas , useFrame} from '@react-three/fiber'
 import { Environment, OrbitControls ,PerspectiveCamera} from "@react-three/drei"
 
 // Assume Scene and Z are components you have already defined to render your 3D models
-import Scene from '../public/Scene'
-import D from '../public/D'
+import Scene from '../docs/Scene'
+import D from '../docs/D'
 
 function App() {
     const [count, setCount] = useState(0);
@@ -27,7 +27,7 @@ function App() {
         <div id="About the Architect" className="about-architect">
           <h2>About the Architect</h2>
           <div className="about-architect-content">
-            <img src="../public/i.jpeg" alt="Architect" className="architect-photo" />
+            <img src="../docs/i.jpeg" alt="Architect" className="architect-photo" />
             <div className="architect-bio">
               <p><strong>Name:</strong> Your Name</p>
               <p><strong>Experience:</strong> 10+ years in architectural design and project management</p>
