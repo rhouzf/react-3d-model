@@ -27,7 +27,7 @@ function App() {
         <div id="About the Architect" className="about-architect">
           <h2>About the Architect</h2>
           <div className="about-architect-content">
-            <img src="../i.jpeg" alt="Architect" className="architect-photo" />
+            <img src="react-3d-model/docs/i.jpeg" alt="Architect" className="architect-photo" />
             <div className="architect-bio">
               <p><strong>Name:</strong> Your Name</p>
               <p><strong>Experience:</strong> 10+ years in architectural design and project management</p>
